@@ -12,6 +12,9 @@
     h1 {
       font-family: 'Black And White Picture', sans-serif;
     }
+    .banner {
+      text-align: center;
+    }
   </style>
 </head>
 
@@ -20,8 +23,13 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
-        <h4>Use the interactive charts below to explore the dataset</h4>
+        <div class="container">
+          <div class="col-md-3 col-sm-12">
+              <img src="{{ url_for('static', filename='img/dancer.gif') }}" alt="dancer" style="max-width: 85%" class="responsive">
+          </div>
+          <div class="col-md-9 col-sm-12 banner"><h1>Belly Button Biodiversity Dashboard</h1>
+            <h4>Use the interactive charts below to explore the dataset</h4>
+        </div>
       </div>
     </div>
     <div class="row">
